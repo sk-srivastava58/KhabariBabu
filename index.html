@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <nav>
         <div class="main-nav container flex">
-            <a href="#" onclick="reload()" class="company-logo">
+            <a href="#" class="company-logo">
                 <img src="./assets/logo.png" alt="company logo">
             </a>
             <div class="nav-links">
@@ -23,15 +22,14 @@
             </div>
             <div class="search-bar flex">
                 <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
-                <button id="search-button" class="search-button">Search</button>
+                <button id="search-button" class="search-button" onclick="searchNews()">Search</button>
             </div>
         </div>
     </nav>
-    
 
     <main>
         <div class="cards-container container flex" id="cards-container">
-            
+            <!-- News cards will be dynamically inserted here -->
         </div>
     </main>
 
@@ -43,11 +41,11 @@
             <div class="card-content">
                 <h3 id="news-title">This is the Title</h3>
                 <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
-                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
             </div>
         </div>
     </template>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
